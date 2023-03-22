@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { NavComponent } from './components/nav.component';
-import { FooterComponent } from './components/footer.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavComponent } from './layout/nav.component';
+import { FooterComponent } from './layout/footer.component';
+import { SharedModule } from './_shared/modules/shared.module';
+import { MobileNavComponent } from './layout/mobile-nav.component';
+import { HeroComponent } from './home/ui/hero.component';
+import { FeaturedComponent } from './home/ui/featured.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClassesComponent } from './home/ui/classes.component';
+import { BannerComponent } from './_shared/components/banner.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +25,19 @@ import { FooterComponent } from './components/footer.component';
     ContactComponent,
     NavComponent,
     FooterComponent,
+    MobileNavComponent,
+    HeroComponent,
+    FeaturedComponent,
+    ClassesComponent,
+    BannerComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    SharedModule,
+    BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

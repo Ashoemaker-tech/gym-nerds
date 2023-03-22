@@ -105,6 +105,7 @@ ol {
 }
 
 .set-bg {
+  background-image: url('./assets/img/hero/hero-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -526,8 +527,7 @@ ol {
   letter-spacing: 6px;
   margin-bottom: 18px;
   position: relative;
-  top: 100px;
-  opacity: 0;
+  /* top: 100px; */
 }
 
 .hs-slider .hs-item .hi-text h1 {
@@ -538,8 +538,7 @@ ol {
   line-height: 90px;
   margin-bottom: 42px;
   position: relative;
-  top: 100px;
-  opacity: 0;
+  /* top: 100px; */
 }
 
 .hs-slider .hs-item .hi-text h1 strong {
@@ -548,8 +547,7 @@ ol {
 
 .hs-slider .hs-item .hi-text .primary-btn {
   position: relative;
-  top: 100px;
-  opacity: 0;
+  /* top: 100px; */
 }
 
 /*---------------------
