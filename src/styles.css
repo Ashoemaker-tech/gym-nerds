@@ -1,7 +1,3 @@
-/*----------------------------------------*/
-
-/* Template default CSS
-/*----------------------------------------*/
 
 html,
 body {
@@ -157,70 +153,6 @@ ol {
 .primary-btn.btn-normal:hover {
   background: #f36100;
   border-color: #f36100;
-}
-
-/* Preloder */
-
-#preloder {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-  background: #000;
-}
-
-.loader {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -13px;
-  margin-left: -13px;
-  border-radius: 60px;
-  animation: loader 0.8s linear infinite;
-  -webkit-animation: loader 0.8s linear infinite;
-}
-
-@keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    border: 4px solid #f44336;
-    border-left-color: transparent;
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    border: 4px solid #673ab7;
-    border-left-color: transparent;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    border: 4px solid #f44336;
-    border-left-color: transparent;
-  }
-}
-
-@-webkit-keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    border: 4px solid #f44336;
-    border-left-color: transparent;
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-    border: 4px solid #673ab7;
-    border-left-color: transparent;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    border: 4px solid #f44336;
-    border-left-color: transparent;
-  }
 }
 
 .spacial-controls {
@@ -1040,7 +972,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.gt-text i {
+.gt-text fa-icon {
   font-size: 30px;
   color: #ffffff;
   display: inline-block;
@@ -1229,23 +1161,16 @@ ol {
   font-weight: 700;
   display: inline-block;
   position: relative;
-  margin-right: 20px;
+  align-self: center;
+  text-decoration: none;
 }
 
-.breadcrumb-text .bt-option a:after {
-  position: absolute;
-  right: -14px;
-  top: 6px;
-  font-family: "FontAwesome";
-  content: "";
-  font-size: 13px;
-  font-weight: 400;
-}
 
 .breadcrumb-text .bt-option span {
   font-size: 18px;
   color: #f36100;
   font-weight: 700;
+  align-self: center;
 }
 
 /*---------------------
@@ -2833,19 +2758,18 @@ ol {
   }
   .canvas-open {
     position: absolute;
+    background-color: transparent;
+    border: none;
     right: 40px;
     top: 61px;
     font-size: 22px;
     width: 30px;
     height: 30px;
     color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 2px;
     line-height: 29px;
     text-align: center;
     z-index: 1;
     display: block;
-    cursor: pointer;
   }
   .offcanvas-menu-wrapper {
     position: fixed;
@@ -2888,14 +2812,11 @@ ol {
     margin-bottom: 20px;
     cursor: pointer;
   }
-  .offcanvas-menu-wrapper .canvas-menu {
-    display: none;
-  }
-  .offcanvas-menu-wrapper .canvas-social {
+   .canvas-social {
     text-align: center;
     padding-top: 20px;
   }
-  .offcanvas-menu-wrapper .canvas-social a {
+   .canvas-social a {
     display: inline-block;
     font-size: 16px;
     color: #363636;
@@ -2904,21 +2825,20 @@ ol {
   .offcanvas-menu-wrapper .canvas-social a:last-child {
     margin-right: 0;
   }
-  .offcanvas-menu-wrapper .slicknav_btn {
+  .offcanvas-menu-wrapper{
     display: none;
   }
-  .offcanvas-menu-wrapper .slicknav_menu {
+  .offcanvas-menu-wrapper {
     background: transparent;
     padding: 0;
   }
-  .offcanvas-menu-wrapper .slicknav_nav {
-    display: block !important;
+  .offcanvas-menu-wrapper {
+    display: block;
   }
-  .offcanvas-menu-wrapper .slicknav_nav ul {
+  .offcanvas-menu-wrapper ul {
     margin: 0;
   }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row,
-  .offcanvas-menu-wrapper .slicknav_nav a {
+  .offcanvas-menu-wrapper  a {
     padding: 10px 0;
     margin: 0;
     color: #151515;
@@ -2927,12 +2847,12 @@ ol {
     font-family: "Oswald", sans-serif;
     font-size: 15px;
   }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row:hover {
+  .offcanvas-menu-wrapper:hover {
     border-radius: 0;
     background: transparent;
     color: #f36100;
   }
-  .offcanvas-menu-wrapper .slicknav_nav a:hover {
+  .offcanvas-menu-wrapper a:hover {
     border-radius: 0;
     background: transparent;
     color: #f36100;
@@ -2979,14 +2899,14 @@ ol {
   }
   .canvas-open {
     position: absolute;
+    background-color: transparent;
+    border: none;
     right: 40px;
     top: 61px;
     font-size: 22px;
     width: 30px;
     height: 30px;
     color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 2px;
     line-height: 29px;
     text-align: center;
     z-index: 1;
@@ -3034,37 +2954,33 @@ ol {
     margin-bottom: 20px;
     cursor: pointer;
   }
-  .offcanvas-menu-wrapper .canvas-menu {
-    display: none;
-  }
-  .offcanvas-menu-wrapper .canvas-social {
+   .canvas-social {
     text-align: center;
     padding-top: 20px;
   }
-  .offcanvas-menu-wrapper .canvas-social a {
+   .canvas-social a {
     display: inline-block;
     font-size: 16px;
     color: #363636;
     margin-right: 6px;
   }
-  .offcanvas-menu-wrapper .canvas-social a:last-child {
+   .canvas-social a:last-child {
     margin-right: 0;
   }
-  .offcanvas-menu-wrapper .slicknav_btn {
+  .offcanvas-menu-wrapper {
     display: none;
   }
-  .offcanvas-menu-wrapper .slicknav_menu {
+  .offcanvas-menu-wrapper{
     background: transparent;
     padding: 0;
   }
-  .offcanvas-menu-wrapper .slicknav_nav {
-    display: block !important;
+  .offcanvas-menu-wrapper {
+    display: block;
   }
-  .offcanvas-menu-wrapper .slicknav_nav ul {
+  .offcanvas-menu-wrapper ul {
     margin: 0;
   }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row,
-  .offcanvas-menu-wrapper .slicknav_nav a {
+  .offcanvas-menu-wrapper  a {
     padding: 10px 0;
     margin: 0;
     color: #151515;
@@ -3073,15 +2989,15 @@ ol {
     font-family: "Oswald", sans-serif;
     font-size: 15px;
   }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row:hover {
+  .offcanvas-menu-wrapper:hover {
     border-radius: 0;
     background: transparent;
     color: #f36100;
   }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row:hover a {
+  .offcanvas-menu-wrapper:hover a {
     color: #f36100;
   }
-  .offcanvas-menu-wrapper .slicknav_nav a:hover {
+  .offcanvas-menu-wrapper a:hover {
     border-radius: 0;
     background: transparent;
     color: #f36100;

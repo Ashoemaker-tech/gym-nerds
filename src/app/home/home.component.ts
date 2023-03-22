@@ -11,6 +11,9 @@ import { Component } from '@angular/core';
     title="register now to get more deals" 
     statement="Where health, beauty and fitness meet." 
     btnText="Appointment"></app-banner>
+    <app-pricing></app-pricing>
+    <app-team></app-team>
+    <app-contact-info></app-contact-info>
   `,
   styles: [
   ]

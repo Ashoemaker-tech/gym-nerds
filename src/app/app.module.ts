@@ -16,6 +16,10 @@ import { FeaturedComponent } from './home/ui/featured.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClassesComponent } from './home/ui/classes.component';
 import { BannerComponent } from './_shared/components/banner.component';
+import { PricingComponent } from './home/ui/pricing.component';
+import { TeamComponent } from './home/ui/team.component';
+import { ContactInfoComponent } from './home/ui/contact-info.component';
+import { PageHeaderComponent } from './_shared/components/page-header.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,10 @@ import { BannerComponent } from './_shared/components/banner.component';
     FeaturedComponent,
     ClassesComponent,
     BannerComponent,
+    PricingComponent,
+    TeamComponent,
+    ContactInfoComponent,
+    PageHeaderComponent,
     
   ],
   imports: [

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { faFacebook, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-nav',
   template: `
-  <app-mobile-nav></app-mobile-nav>
+  <app-mobile-nav [show]="show" (btnClick)="show = !show"></app-mobile-nav>
   <header class="header-section">
         <div class="container-fluid">
             <div class="row">
@@ -41,9 +41,6 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
                 </div>
                 <div class="col-lg-3">
                     <div class="top-option">
-                        <div class="to-search search-switch">
-                            <fa-icon [icon]="faSearch"></fa-icon>
-                        </div>
                         <div class="to-social">
                             <a routerLink="#"><fa-icon [icon]="faFacebook"></fa-icon></a>
                             <a routerLink="#"><fa-icon [icon]="faTwitter" ></fa-icon></a>
@@ -53,9 +50,9 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
                     </div>
                 </div>
             </div>
-            <div class="canvas-open">
-                <i class="fa fa-bars"></i>
-            </div>
+            <button class="canvas-open" (click)="show = !show">
+                <fa-icon [icon]="faBars"></fa-icon>
+            </button>
         </div>
     </header>
   `,
@@ -68,4 +65,7 @@ export class NavComponent {
   faYoutube = faYoutube
   faInstagram = faInstagram
   faSearch = faSearch
+  faBars = faBars
+
+  show: boolean = false 
 }
