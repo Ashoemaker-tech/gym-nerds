@@ -11,7 +11,7 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a routerLink="./index.html">
+                        <a routerLink="/">
                             <img src="../../../assets/img/logo.png" alt="">
                         </a>
                     </div>
@@ -19,11 +19,11 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
-                            <li class="active"><a routerLink="/index">Home</a></li>
-                            <li><a routerLink="/about">About Us</a></li>
-                            <li><a routerLink="/class-details">Classes</a></li>
-                            <li><a routerLink="/services">Services</a></li>
-                            <li><a routerLink="/team">Our Team</a></li>
+                            <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+                            <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+                            <li><a routerLink="/class-details" routerLinkActive="active">Classes</a></li>
+                            <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+                            <li><a routerLink="/team" routerLinkActive="active">Our Team</a></li>
                             <li><a routerLink="#">Pages</a>
                                 <ul class="dropdown">
                                     <li><a routerLink="/about">About us</a></li>
@@ -35,7 +35,7 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
                                     <li><a routerLink="/404">404</a></li>
                                 </ul>
                             </li>
-                            <li><a routerLink="/contact">Contact</a></li>
+                            <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
                         </ul>
                     </nav>
                 </div>

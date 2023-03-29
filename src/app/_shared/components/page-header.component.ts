@@ -12,7 +12,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
                         <h2>{{ title }}</h2>
                         <div class="bt-option">
                             <a [routerLink]="path">Home</a>
-                            <fa-icon class="mx-1 text-white" [icon]="faChevronRight"></fa-icon>
+                            <fa-icon class="mx-1 text-white" [icon]="faChevronRight" size="xs"></fa-icon>
                             <span>{{route}}</span>
                         </div>
                     </div>

@@ -289,11 +289,11 @@ ol {
   margin-right: 0;
 }
 
-.nav-menu ul li.active > a {
+.nav-menu ul li > a.active {
   color: #f36100;
 }
 
-.nav-menu ul li.active > a:after {
+.nav-menu ul li > a.active:after {
   opacity: 1;
 }
 
