@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { faFacebook, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,7 +6,7 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
   selector: 'app-nav',
   template: `
   <app-mobile-nav [show]="show" (btnClick)="show = !show"></app-mobile-nav>
-  <header class="header-section">
+  <header [class.sticky]="setSticky" class="header-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
@@ -22,8 +22,7 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
                             <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
                             <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
                             <li><a routerLink="/gallery" routerLinkActive="active">Gallery</a></li>
-                            <li><a routerLink="/class-details" routerLinkActive="active">Classes</a></li>
-                            <li><a routerLink="/services" routerLinkActive="active">Schedule</a></li>
+                            <li><a routerLink="/class" routerLinkActive="active">Classes</a></li>
                             <li><a routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
                             <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
                         </ul>
@@ -50,6 +49,14 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
  .nav-menu ul li a {
     text-decoration: none;
  } 
+
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #363636;
+ }
   `
   ]
 })
@@ -62,4 +69,20 @@ export class NavComponent {
   faBars = faBars
 
   show: boolean = false 
+  setSticky: boolean = false
+
+   
+//    handleScroll(){
+//     if (window.scrollY > 10) {
+//       this.setSticky = true;
+//     } else {
+//       this.setSticky = false;
+//     }
+//   };
+@HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event) {
+    const scrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.setSticky = scrollOffset > 10;
+  }
+  
 }

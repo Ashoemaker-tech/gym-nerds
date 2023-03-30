@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pricing',
+  selector: 'app-pricing-cards',
   template: `
     <section class="pricing-section spad">
         <div class="container">
@@ -22,11 +22,11 @@ import { Component } from '@angular/core';
                             <span>SINGLE CLASS</span>
                         </div>
                         <ul>
-                            <li>Free riding</li>
-                            <li>Unlimited equipments</li>
+                            <li>Free sauna</li>
+                            <li>Unlimited equipment</li>
                             <li>Personal trainer</li>
-                            <li>Weight losing classes</li>
-                            <li>Month to mouth</li>
+                            <li>Weight loss plans</li>
+                            <li>Month to month</li>
                             <li>No time restriction</li>
                         </ul>
                         <a href="#" class="primary-btn pricing-btn">Enroll now</a>
@@ -35,17 +35,17 @@ import { Component } from '@angular/core';
                 </div>
                 <div class="col-lg-4 col-md-8">
                     <div class="ps-item">
-                        <h3>12 Month unlimited</h3>
+                        <h3>6 Month unlimited</h3>
                         <div class="pi-price">
                             <h2>$ 99.99</h2>
-                            <span>SINGLE CLASS</span>
+                            <span>Weekly Classes</span>
                         </div>
                         <ul>
-                            <li>Free riding</li>
-                            <li>Unlimited equipments</li>
+                            <li>Free sauna</li>
+                            <li>Unlimited equipment</li>
                             <li>Personal trainer</li>
-                            <li>Weight losing classes</li>
-                            <li>Month to mouth</li>
+                            <li>Weight loss plans</li>
+                            <li>Save 20% bi annual</li>
                             <li>No time restriction</li>
                         </ul>
                         <a href="#" class="primary-btn pricing-btn">Enroll now</a>
@@ -53,17 +53,17 @@ import { Component } from '@angular/core';
                 </div>
                 <div class="col-lg-4 col-md-8">
                     <div class="ps-item">
-                        <h3>6 Month unlimited</h3>
+                        <h3>12 Month unlimited</h3>
                         <div class="pi-price">
-                            <h2>$ 59.99</h2>
-                            <span>SINGLE CLASS</span>
+                            <h2>$ 299.99</h2>
+                            <span>Weekly Classes</span>
                         </div>
                         <ul>
-                            <li>Free riding</li>
-                            <li>Unlimited equipments</li>
+                            <li>Free sauna</li>
+                            <li>Unlimited equipment</li>
                             <li>Personal trainer</li>
-                            <li>Weight losing classes</li>
-                            <li>Month to mouth</li>
+                            <li>Weight loss plans</li>
+                            <li>Save 40% annual</li>
                             <li>No time restriction</li>
                         </ul>
                         <a href="#" class="primary-btn pricing-btn">Enroll now</a>
@@ -77,6 +77,6 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class PricingComponent {
+export class PricingCardsComponent {
 
 }

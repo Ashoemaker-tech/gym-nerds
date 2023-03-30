@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 @Component({
-  selector: 'app-classes',
+  selector: 'app-class-grid',
   template: `
       <section class="classes-section spad">
         <div class="container">
@@ -81,6 +81,6 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
   styles: [
   ]
 })
-export class ClassesComponent {
+export class ClassesGridComponent {
 faAngleRight = faAngleRight
 }

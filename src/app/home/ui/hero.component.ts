@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <section class="hero-section">
         <div class="hs-slider owl-carousel">
-            <div class="hs-item set-bg">
+            <div class="hs-item set-bg" style="background-image: url('../../../assets/img/hero/hero-2.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 offset-lg-6">

@@ -5,13 +5,14 @@ import { Component } from '@angular/core';
   template: `
     <app-hero></app-hero>
     <app-featured></app-featured>
-    <app-classes></app-classes>
+    <app-class-grid></app-class-grid>
     <app-banner 
     bgImage="../../../assets/img/banner-bg.jpg" 
     title="register now to get more deals" 
     statement="Where health, beauty and fitness meet." 
-    btnText="Appointment"></app-banner>
-    <app-pricing></app-pricing>
+    btnText="Register"></app-banner>
+    <app-pricing-cards></app-pricing-cards>
+    <app-bmi></app-bmi>
     <app-team></app-team>
     <app-contact-info></app-contact-info>
   `,

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { LightgalleryModule } from 'lightgallery/angular';
 
 
@@ -13,15 +14,20 @@ import { FooterComponent } from './layout/footer.component';
 import { SharedModule } from './_shared/modules/shared.module';
 import { MobileNavComponent } from './layout/mobile-nav.component';
 import { HeroComponent } from './home/ui/hero.component';
-import { FeaturedComponent } from './home/ui/featured.component';
+import { FeaturedComponent } from './_shared/components/featured.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ClassesComponent } from './home/ui/classes.component';
+import { ClassesGridComponent } from './home/ui/class-grid.component';
 import { BannerComponent } from './_shared/components/banner.component';
-import { PricingComponent } from './home/ui/pricing.component';
-import { TeamComponent } from './home/ui/team.component';
-import { ContactInfoComponent } from './home/ui/contact-info.component';
+import { PricingCardsComponent } from './_shared/components/pricing-cards.component';
+import { TeamComponent } from './_shared/components/team.component';
+import { ContactInfoComponent } from './_shared/components/contact-info.component';
 import { PageHeaderComponent } from './_shared/components/page-header.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { AboutCardComponent } from './about/ui/about-card.component';
+import { ClassesComponent } from './classes/classes.component';
+import { ClassesTableComponent } from './classes/ui/classes-table.component';
+import { BmiComponent } from './home/ui/bmi.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +40,18 @@ import { GalleryComponent } from './gallery/gallery.component';
     MobileNavComponent,
     HeroComponent,
     FeaturedComponent,
-    ClassesComponent,
+    ClassesGridComponent,
     BannerComponent,
-    PricingComponent,
+    PricingCardsComponent,
     TeamComponent,
     ContactInfoComponent,
     PageHeaderComponent,
     GalleryComponent,
+    PricingComponent,
+    AboutCardComponent,
+    ClassesComponent,
+    ClassesTableComponent,
+    BmiComponent
     
   ],
   imports: [
@@ -48,7 +59,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
-    LightgalleryModule
+    LightgalleryModule,
+    FormsModule
 
   ],
   providers: [],

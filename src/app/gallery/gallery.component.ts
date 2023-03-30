@@ -5,10 +5,10 @@ import { BeforeSlideDetail } from "lightgallery/lg-events";
 @Component({
   selector: "app-gallery",
   template: `
-    <app-page-header
+    <page-header
       [title]="title"
       image="../../assets/img/breadcrumb-bg.jpg"
-    ></app-page-header>
+    ></page-header>
     <div class="gallery-page gallery-section">
       <div class="gallery">
         <div class="grid-sizer"></div>
@@ -97,6 +97,7 @@ import { BeforeSlideDetail } from "lightgallery/lg-events";
         </lightgallery>
       </div>
     </div>
+    <app-contact-info></app-contact-info>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None,

@@ -4,7 +4,7 @@ import { faEnvelope, faMobile, faMapMarker } from '@fortawesome/free-solid-svg-i
 @Component({
   selector: 'app-contact',
   template: `
-  <app-page-header [title]="title" image="../../assets/img/breadcrumb-bg.jpg"></app-page-header>
+  <page-header [title]="title" image="../../assets/img/breadcrumb-bg.jpg"></page-header>
      <section class="contact-section spad">
         <div class="container">
             <div class="row">

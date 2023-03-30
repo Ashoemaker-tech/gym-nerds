@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pricing',
+  selector: 'app-classes',
   template: `
     <page-header [title]="title" image="../../assets/img/breadcrumb-bg.jpg"></page-header>
-    <app-pricing-cards></app-pricing-cards>
+    <app-classes-table></app-classes-table>  
     <app-contact-info></app-contact-info>
   `,
   styles: [
   ]
 })
-export class PricingComponent {
-title: string = 'Our Pricing'
+export class ClassesComponent {
+title :string = 'Classes'
 }

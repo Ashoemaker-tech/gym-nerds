@@ -102,7 +102,6 @@ ol {
 }
 
 .set-bg {
-  background-image: url('./assets/img/hero/hero-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1955,6 +1954,15 @@ ol {
   border: none;
   padding: 15px 0;
   background: #f36100;
+}
+
+.bmi-value {
+  font-size: 16px;
+  color: #f36100;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 0;
 }
 
 /*---------------------

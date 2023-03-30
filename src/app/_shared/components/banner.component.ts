@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-banner',
   template: `
-    <section class="banner-section" style="background-image: url('{{ bgImage }}');">
+    <section class="banner-section set-bg" style="background-image: url('{{ bgImage }}');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
