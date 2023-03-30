@@ -10,11 +10,6 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb-text">
                         <h2>{{ title }}</h2>
-                        <div class="bt-option">
-                            <a [routerLink]="path">Home</a>
-                            <fa-icon class="mx-1 text-white" [icon]="faChevronRight" size="xs"></fa-icon>
-                            <span>{{route}}</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -25,8 +20,6 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
   ]
 })
 export class PageHeaderComponent {
-  @Input() path!: string
-  @Input() route!: string
   @Input() title!: string
   @Input() image!: string
   faChevronRight = faChevronRight

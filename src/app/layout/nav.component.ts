@@ -21,20 +21,10 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
                         <ul>
                             <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
                             <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+                            <li><a routerLink="/gallery" routerLinkActive="active">Gallery</a></li>
                             <li><a routerLink="/class-details" routerLinkActive="active">Classes</a></li>
-                            <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
-                            <li><a routerLink="/team" routerLinkActive="active">Our Team</a></li>
-                            <li><a routerLink="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a routerLink="/about">About us</a></li>
-                                    <li><a routerLink="/class-timetable">Classes timetable</a></li>
-                                    <li><a routerLink="/bmi-calculator">Bmi calculate</a></li>
-                                    <li><a routerLink="/team">Our team</a></li>
-                                    <li><a routerLink="/gallery">Gallery</a></li>
-                                    <li><a routerLink="/blog">Our blog</a></li>
-                                    <li><a routerLink="/404">404</a></li>
-                                </ul>
-                            </li>
+                            <li><a routerLink="/services" routerLinkActive="active">Schedule</a></li>
+                            <li><a routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
                             <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
                         </ul>
                     </nav>
@@ -56,7 +46,11 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
         </div>
     </header>
   `,
-  styles: [
+  styles: [`
+ .nav-menu ul li a {
+    text-decoration: none;
+ } 
+  `
   ]
 })
 export class NavComponent {

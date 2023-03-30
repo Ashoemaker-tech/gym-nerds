@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
     <app-page-header
     image="../../../assets/img/breadcrumb-bg.jpg"
     title="About us"
-    route="About"
-    path="/"
     ></app-page-header>
   `,
   styles: [

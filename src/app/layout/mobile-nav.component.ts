@@ -31,9 +31,10 @@ import {
             <ul class="nav flex-column justify-items-center">
             <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
             <li class="nav-item"><a class="nav-link" routerLink="/about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/gallery">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" routerLink="/classes">Classes</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/team">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/schedule">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/pricing">Pricing</a></li>
             <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
             </ul>
         <div id="mobile-menu-wrap"></div>

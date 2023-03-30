@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LightgalleryModule } from 'lightgallery/angular';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +21,7 @@ import { PricingComponent } from './home/ui/pricing.component';
 import { TeamComponent } from './home/ui/team.component';
 import { ContactInfoComponent } from './home/ui/contact-info.component';
 import { PageHeaderComponent } from './_shared/components/page-header.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,15 @@ import { PageHeaderComponent } from './_shared/components/page-header.component'
     TeamComponent,
     ContactInfoComponent,
     PageHeaderComponent,
+    GalleryComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LightgalleryModule
 
   ],
   providers: [],
