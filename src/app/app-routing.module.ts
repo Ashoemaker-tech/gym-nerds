@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'class', component: ClassesComponent},
   {path: 'pricing', component: PricingComponent},
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
