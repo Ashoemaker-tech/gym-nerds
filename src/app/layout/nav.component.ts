@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { faFacebook, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,13 +6,13 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
   selector: 'app-nav',
   template: `
   <app-mobile-nav [show]="show" (btnClick)="show = !show"></app-mobile-nav>
-  <header [class.sticky]="setSticky" class="header-section">
+  <header (scroll)="handleScroll()" [ngClass]="setSticky ? 'sticky' : ''" class="header-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo">
                         <a routerLink="/">
-                            <img src="../../../assets/img/logo.png" alt="">
+                            <img src="../../../assets/img/GymnerdsLogo.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -55,7 +55,9 @@ import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: #363636;
+    background-color: rgba(0,0,0,0.9);
+   padding-bottom: 20px; 
+   transition: 0.3s linear;
  }
   `
   ]
@@ -67,22 +69,16 @@ export class NavComponent {
   faInstagram = faInstagram
   faSearch = faSearch
   faBars = faBars
-
+  navPosition: any;
   show: boolean = false 
   setSticky: boolean = false
 
-   
-//    handleScroll(){
-//     if (window.scrollY > 10) {
-//       this.setSticky = true;
-//     } else {
-//       this.setSticky = false;
-//     }
-//   };
-@HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: Event) {
-    const scrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    this.setSticky = scrollOffset > 10;
-  }
-  
+@HostListener('window:scroll', ['$event']) handleScroll(){
+        const windowScroll = window.pageYOffset;
+        if(windowScroll >= 200){
+            this.setSticky = true;
+        } else {
+            this.setSticky = false;
+        }
+    }
 }

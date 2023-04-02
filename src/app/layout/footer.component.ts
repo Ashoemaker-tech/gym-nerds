@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
                 <div class="col-lg-4">
                     <div class="fs-about">
                         <div class="fa-logo">
-                            <a href="#"><img src="../../../assets/img/logo.png" alt=""></a>
+                            <a href="#"><img src="../../../assets/img/GymnerdsLogo.png" alt=""></a>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua endisse ultrices gravida lorem.</p>
                         <div class="fa-social">
@@ -71,7 +71,7 @@ import { Component } from '@angular/core';
                             Copyright &copy; {{ today | date:'yyyy'}}
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made by <a href="https://ashoemaker.net/" target="_blank">Andrew Shoemaker</a>
+                            </script> All rights reserved | This template is made with Angular by <a href="https://ashoemaker.net/" target="_blank">Andrew Shoemaker</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
